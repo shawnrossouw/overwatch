@@ -1,0 +1,252 @@
+/*=========================================This is the styles for main navigation======================================*/
+
+/*==============================Main Navigation Menu == Base Styles=================================*/
+
+nav {
+  padding: 0;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.nav-main {
+  width: 100%;
+  background: #343834;
+  color: white;
+}
+
+.nav-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.nav-links {
+  width: 100%;
+  height: 100%;
+  background: #c7c7c7;
+  list-style: none;
+  color: #343834;
+  padding: 0;
+  margin: -1px 0 0 0;
+  display: none;
+}
+
+.link {
+  text-align: center;
+  padding: 1em 0;
+  border-top: 1px solid white;
+  width: 100%;
+}
+
+.link img {
+  padding-left: 0.5em;
+}
+
+.logo img {
+  width: 300px;
+  padding: 1.5em 0;
+}
+
+/*==============================Mobile Menu Top Button=================================*/
+
+.menu-toggle {
+  width: 100%;
+  padding: 1em;
+  color: white;
+  background: #cf7200;
+  text-align: center;
+  border: none;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.menu-toggle img {
+  padding-left: 1em;
+}
+
+/*==============================Sub Navigation Menu=================================*/
+
+.dropdown-menu {
+  background: #e8e8e8;
+  margin: 1em 0 -1em 0;
+  padding: 0;
+  display: none;
+}
+
+.dropdown-menu li {
+  font-size: 1em;
+  padding: 1em 0;
+  background: #e8e8e8;
+  border-top: 1px solid #c7c7c7;
+  text-align: center;
+}
+
+.dropdown-menu li:hover {
+  background: #c7c7c7;
+}
+
+.dropdown-menu li a {
+  color: #595959;
+}
+
+/*==============================Jquery override class=================================*/
+
+.active {
+  display: block;
+}
+
+/*==============================Media Queries=================================*/
+@media all and (min-width: 480px) {
+  .logo img {
+    width: 250px;
+    padding: 1.5em 0;
+  }
+
+  .menu-toggle {
+    font-size: 1em;
+  }
+}
+
+/* nav {
+  width: 100%;
+} */
+
+@media all and (min-width: 768px) {
+  /* nav {
+    width: 100%;
+    margin: 0;
+  } */
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-main {
+    width: 100%;
+    height: 100%;
+    background: #343834;
+    color: white;
+    border-bottom: 5px solid #cf7200;
+  }
+
+  .nav-inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .nav-links {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    background: none;
+    list-style: none;
+    color: #343834;
+    font-size: 12px;
+  }
+
+  .nav-links li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .link {
+    border-top: none;
+    padding: 0 0.5em;
+    height: 100%;
+  }
+
+  .logo img {
+    width: 250px;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    width: 200px;
+    list-style: none;
+    z-index: 999;
+    transform: translateX(-20%);
+    margin: 0;
+    border-top: 5px solid #cf7200;
+    border-bottom: 5px solid #cf7200;
+  }
+
+  .dropdown-menu li {
+    padding-left: 1em;
+  }
+
+  .dropdown-menu li a {
+    color: #343834;
+  }
+
+  .dm1 {
+    display: none;
+  }
+
+  .l1:hover .dm1 {
+    display: block;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-links {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    margin: 0;
+    color: white;
+    height: 100px;
+  }
+
+  .nav-inner {
+    position: relative;
+    max-width: 80%;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+}
+
+@media all and (min-width: 1300px) {
+  nav {
+    width: auto;
+  }
+
+  .nav-links {
+    font-size: 1em;
+  }
+
+  .nav-links li a {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dropdown-menu {
+    left: 0;
+  }
+}

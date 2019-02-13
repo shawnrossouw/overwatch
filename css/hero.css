@@ -1,0 +1,201 @@
+/*This is the styles for hero slider inside the header*/
+
+.hero {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.hero .slide {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+.hero .slide img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.hero-slogan {
+    position: absolute;
+    top: 18%;
+    right: 7%;
+    color: white;
+    margin: 0;
+    font-size: 3.5em;
+    text-align: right;
+}
+
+.hero-content-container{
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background: rgba(59, 59, 59,.9);
+    border-bottom: 5px solid #CF7200;
+    overflow: hidden;
+}
+
+.hero-content .hero-content-text {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-content-text h3 {
+    margin: 0;
+}
+
+.hero-content p, h3 {
+    padding: 1em;
+}
+
+.hero-content-btn {
+    position: absolute;
+    background: #CF7200;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.content-btn-left {
+    margin: 0;
+    background: #CF7200;
+    border: none;
+    padding: .8em 1.1em;
+    cursor: pointer;
+}
+
+.content-btn-right {
+    margin: 0;
+    background: #CF7200;
+    border: none;
+    padding: .8em 1.1em;
+    cursor: pointer;
+}
+
+.flickity-button {
+    display: none;
+}
+
+@media all and (min-width: 480px){
+    .hero {
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .hero .slide {
+        position: relative;
+        width: 100%;
+        height: 250px;
+    }
+
+    .hero .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+    }
+    .hero-slogan {
+        position: absolute;
+        top: 18%;
+        right: 7%;
+        color: white;
+        margin: 0;
+        font-size: 3em;
+        text-align: right;
+    }
+
+    .hero-content p, h3 {
+        padding: 2em;
+    }
+
+}
+
+@media all and (min-width: 768px) {
+    .hero {
+        background: white;
+        height: 70vh;
+        overflow: hidden;
+    }
+    
+    .hero .slide {
+        width: 100%;
+        height: 70vh;
+        margin-right: 10px;
+        overflow: hidden;
+    }
+    
+    .hero .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left center;
+    }
+
+    .hero-content-container{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 40%;
+        height: 300px;
+        margin-left: 2em;
+        z-index: 1;
+        background: rgba(153, 31, 31, 0.5);
+    }
+
+    .hero-content {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(59, 59, 59,.9);
+        z-index: 100;
+        overflow: hidden;
+    }
+
+    .hero-content .hero-content-text {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero-slogan {
+        font-size: 8em;
+        line-height: 1em;
+        color: #C7732E;
+        mix-blend-mode: multiply;
+        top: 5%;
+    }
+
+    .hs2, .hs3 {
+        color: white;
+        mix-blend-mode: normal;
+    }
+
+    .hero-content p, h3 {
+        padding: 1em;
+    }
+
+    .hero-content-btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 999;
+    }
+
+    /* Flickity styles */
+
+    .flickity-button {
+        display: none;
+      }
+
+}

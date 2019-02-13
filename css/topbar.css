@@ -1,0 +1,53 @@
+/*This is the styles for top bar section with the search bar, login and cart buttons*/
+
+.topbar{
+    width: 100%;
+    height: 100%;
+    background: #595959;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+}
+
+.btn {
+    background-color: #595959;
+    border: none; 
+    color: white; 
+    padding: 1em 1em; 
+    font-size: 18px; 
+    cursor: pointer; 
+  } 
+
+  .btn:hover {
+    background-color: #CF7200;
+    transition: all .3s ease;
+
+  }
+
+  .btn img {
+      padding-right: 10px;
+  }
+
+  .search {
+      display: flex;
+      align-items: center;
+  }
+
+  .login {
+    display: flex;
+    align-items: center;
+  }
+
+  .cart {
+    display: flex;
+    align-items: center;
+    background: #CF7200;
+  }
+
+@media all and(min-width: 480px) {
+  .btn {
+    font-size: .8em; 
+    padding: .5em .5em; 
+  } 
+}
