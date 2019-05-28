@@ -17,14 +17,14 @@ html {
 body {
   width: 100%;
   height: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   color: #595959;
 }
 
-::-webkit-scrollbar { 
-  display: none; 
+::-webkit-scrollbar {
+  display: none;
 }
 
 a {
@@ -35,16 +35,3 @@ a {
 p {
   margin: 0;
 }
-
-
-
-
-
-/*Main CSS Colors
-1. #C7C7C7
-2. #C7713E
-3. #343834
-4. #595959
-5. #E8E8E8
-6. linear-gradient: #936000, #C7731E
-*/

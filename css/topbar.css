@@ -1,53 +1,98 @@
 /*This is the styles for top bar section with the search bar, login and cart buttons*/
 
-.topbar{
-    width: 100%;
-    height: 100%;
-    background: #595959;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    color: white;
+.topbar {
+  width: 100%;
+  height: 100%;
+  background: #595959;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: white;
 }
 
 .btn {
-    background-color: #595959;
-    border: none; 
-    color: white; 
-    padding: 1em 1em; 
-    font-size: 18px; 
-    cursor: pointer; 
-  } 
+  background-color: #595959;
+  border: none;
+  color: white;
+  padding: 1em 1em;
+  font-size: 18px;
+  cursor: pointer;
+}
 
-  .btn:hover {
-    background-color: #CF7200;
-    transition: all .3s ease;
+.btn:hover {
+  background-color: #cf7200;
+  transition: all 0.3s ease;
+}
 
-  }
+.btn img {
+  padding-right: 10px;
+}
 
-  .btn img {
-      padding-right: 10px;
-  }
+.search {
+  display: flex;
+  align-items: center;
+}
 
-  .search {
-      display: flex;
-      align-items: center;
-  }
+.login {
+  display: flex;
+  align-items: center;
+}
 
-  .login {
-    display: flex;
-    align-items: center;
-  }
-
-  .cart {
-    display: flex;
-    align-items: center;
-    background: #CF7200;
-  }
+.cart {
+  display: flex;
+  align-items: center;
+  background: #cf7200;
+}
 
 @media all and(min-width: 480px) {
   .btn {
-    font-size: .8em; 
-    padding: .5em .5em; 
-  } 
+    font-size: 0.8em;
+    padding: 0.5em 0.5em;
+  }
 }
+
+/*=============================================Search Bar=============================================*/
+
+input {
+  outline: none;
+  color: white;
+}
+
+input[type=search] {
+	appearance: textfield;
+	box-sizing: content-box;
+	font-family: inherit;
+  font-size: 100%;
+}
+
+input::search-decoration,
+input::search-cancel-button {
+	display: none; 
+}
+
+input[type=search] {
+	background: #595959 url(/images/search.svg) no-repeat 9px center;
+	border: solid 1px #595959;
+	padding: 9px 10px 9px 40px;
+  width: 4em;
+  height: calc(2em + 6px);
+  transition: all .5s;
+}
+
+input[type=search]:focus {
+	width: 15em;
+  background-color: #cf7200;
+  border: solid 1px #cf7200;
+}
+
+input[type=search]:hover {
+  background-color: #cf7200;
+  border: solid 1px #cf7200;
+  cursor: pointer;
+}
+
+input::placeholder {
+	color: #fff;
+}
+
+

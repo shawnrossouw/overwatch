@@ -14,7 +14,8 @@
 <body>
     <header>
         <div class="topbar">
-            <button class="search btn"><img src="/images/search.svg">Search</button>
+            <form id="exp-searchbar"><input type="search" placeholder="Search"><label></label></form>
+            <!-- <button class="search btn"><img src="/images/search.svg">Search</button> -->
             <button class="login btn"><img src="/images/login.svg">Login</button>
             <button class="cart btn"><img src="/images/cart.svg">2</button>
         </div>
@@ -25,7 +26,8 @@
                 <nav>
                     <button class="menu-toggle">MENU<img src="/images/arrow-down.svg" alt="arrow"></button>
                     <ul class="nav-links">
-                        <li class="link l1"><a href="#">AMMUNITION<img src="/images/arrow-down-orange.svg" alt="arrow"></a>
+                        <li class="link l1"><a href="#">AMMUNITION<img src="/images/arrow-down-orange.svg"
+                                    alt="arrow"></a>
                             <ul class="dropdown-menu dm1">
                                 <li><a href="#">Item</a></li>
                                 <li><a href="#">Item</a></li>
@@ -34,7 +36,8 @@
                             </ul>
                         </li>
 
-                        <li class="link l2"><a href="#">AIR RIFLES<img src="/images/arrow-down-orange.svg" alt="arrow"></a>
+                        <li class="link l2"><a href="#">AIR RIFLES<img src="/images/arrow-down-orange.svg"
+                                    alt="arrow"></a>
                             <ul class="dropdown-menu dm2">
                                 <li><a href="#">Item</a></li>
                                 <li><a href="#">Item</a></li>
@@ -42,11 +45,16 @@
                                 <li><a href="#">Item</a></li>
                             </ul>
                         </li>
-                        <li class="link"><a href="#">ARCHERY<img src="/images/arrow-down-orange.svg" alt="arrow"></a></li>
-                        <li class="link"><a href="#">KNIVES<img src="/images/arrow-down-orange.svg" alt="arrow"></a></li>
-                        <li class="link"><a href="#">PACKAGES<img src="/images/arrow-down-orange.svg" alt="arrow"></a></li>
-                        <li class="link"><a href="#">PISTOLS<img src="/images/arrow-down-orange.svg" alt="arrow"></a></li>
-                        <li class="link"><a href="#">SPARES & ACCESSORIES<img src="/images/arrow-down-orange.svg" alt="arrow"></a></li>
+                        <li class="link"><a href="#">ARCHERY<img src="/images/arrow-down-orange.svg" alt="arrow"></a>
+                        </li>
+                        <li class="link"><a href="#">KNIVES<img src="/images/arrow-down-orange.svg" alt="arrow"></a>
+                        </li>
+                        <li class="link"><a href="#">PACKAGES<img src="/images/arrow-down-orange.svg" alt="arrow"></a>
+                        </li>
+                        <li class="link"><a href="#">PISTOLS<img src="/images/arrow-down-orange.svg" alt="arrow"></a>
+                        </li>
+                        <li class="link"><a href="#">SPARES & ACCESSORIES<img src="/images/arrow-down-orange.svg"
+                                    alt="arrow"></a></li>
                     </ul>
                 </nav>
             </div>
@@ -81,7 +89,7 @@
                     <h3>THE BEST BRO'S EVER</h3>
                     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, beatae deleniti? Enim corrupti
                         expedita nulla obcaecati tempore quae quo dicta provident molestias commodi dignissimos
-                        asperiores ipsam iusto, praesentium earum, </P>
+                        asperiores ipsam iusto, praesentium earum</P>
                 </div>
 
                 <div class="hero-content-text">
@@ -112,7 +120,7 @@
                 <div class="box">
                     <div class="box-image">
                         <div class="content-overlay"></div><img src="/images/item-1.png" alt="product">
-                        <div class="content-details fadeIn-top"><button class="product-btn">VIEW PACKAGE</button></div>
+                        <button class="product-btn">VIEW PACKAGE</button>
                     </div>
                     <div class="box-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore,
                         sapiente!</div>
@@ -122,7 +130,7 @@
                 <div class="box">
                     <div class="box-image">
                         <div class="content-overlay"></div><img src="/images/item-2.png" alt="product">
-                        <div class="content-details fadeIn-top"><button class="product-btn">VIEW PACKAGE</button></div>
+                        <button class="product-btn">VIEW PACKAGE</button>
                     </div>
                     <div class="box-content">Lorem ipsum, dolor sit amet consectetur.</div>
                     <div class="box-price">R 270.00</div>
@@ -131,7 +139,7 @@
                 <div class="box">
                     <div class="box-image">
                         <div class="content-overlay"></div><img src="/images/item-3.png" alt="product">
-                        <div class="content-details fadeIn-top"><button class="product-btn">VIEW PACKAGE</button></div>
+                        <button class="product-btn">VIEW PACKAGE</button>
                     </div>
                     <div class="box-content">Lorem ipsum, dolor sit amet consectetur.</div>
                     <div class="box-price">R 270.00</div>
@@ -140,7 +148,7 @@
                 <div class="box">
                     <div class="box-image">
                         <div class="content-overlay"></div><img src="/images/item-4.png" alt="product">
-                        <div class="content-details fadeIn-top"><button class="product-btn">VIEW PACKAGE</button></div>
+                        <button class="product-btn">VIEW PACKAGE</button>
                     </div>
                     <div class="box-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore,
                         sapiente!</div>
@@ -148,63 +156,84 @@
                 </div>
 
                 <div class="box">
-                    <div class="box-image"><img src="/images/item-5.png" alt="product"></div>
+                    <div class="box-image">
+                        <div class="content-overlay"></div><img src="/images/item-5.png" alt="product">
+                        <button class="product-btn">VIEW PACKAGE</button>
+                    </div>
                     <div class="box-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore,
                         sapiente!</div>
                     <div class="box-price">R 270.00</div>
                 </div>
 
                 <div class="box">
-                    <div class="box-image"><img src="/images/item-6.png" alt="product"></div>
+                    <div class="box-image">
+                        <div class="content-overlay"></div><img src="/images/item-6.png" alt="product">
+                        <button class="product-btn">VIEW PACKAGE</button>
+                    </div>
                     <div class="box-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore,
                         sapiente!</div>
                     <div class="box-price">R 270.00</div>
                 </div>
 
                 <div class="box">
-                    <div class="box-image"><img src="/images/item-7.png" alt="product"></div>
+                    <div class="box-image">
+                        <div class="content-overlay"></div><img src="/images/item-7.png" alt="product">
+                        <button class="product-btn">VIEW PACKAGE</button>
+                    </div>
                     <div class="box-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore,
                         sapiente!</div>
                     <div class="box-price">R 270.00</div>
                 </div>
 
                 <div class="box">
-                    <div class="box-image"><img src="/images/item-8.png" alt="product"></div>
+                    <div class="box-image">
+                        <div class="content-overlay"></div><img src="/images/item-8.png" alt="product">
+                        <button class="product-btn">VIEW PACKAGE</button>
+                    </div>
                     <div class="box-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore,
                         sapiente!</div>
                     <div class="box-price">R 270.00</div>
                 </div>
 
                 <div class="box">
-                    <div class="box-image"><img src="/images/item-9.png" alt="product"></div>
+                    <div class="box-image">
+                        <div class="content-overlay"></div><img src="/images/item-9.png" alt="product">
+                        <button class="product-btn">VIEW PACKAGE</button>
+                    </div>
                     <div class="box-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore,
                         sapiente!</div>
                     <div class="box-price">R 270.00</div>
                 </div>
 
                 <div class="box">
-                    <div class="box-image"><img src="/images/item-10.png" alt="product"></div>
+                    <div class="box-image">
+                        <div class="content-overlay"></div><img src="/images/item-10.png" alt="product">
+                        <button class="product-btn">VIEW PACKAGE</button>
+                    </div>
                     <div class="box-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore,
                         sapiente!</div>
                     <div class="box-price">R 270.00</div>
                 </div>
 
                 <div class="box">
-                    <div class="box-image"><img src="/images/item-11.png" alt="product"></div>
+                    <div class="box-image">
+                        <div class="content-overlay"></div><img src="/images/item-11.png" alt="product">
+                        <button class="product-btn">VIEW PACKAGE</button>
+                    </div>
                     <div class="box-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore,
                         sapiente!</div>
                     <div class="box-price">R 270.00</div>
                 </div>
 
                 <div class="box">
-                    <div class="box-image"><img src="/images/item-12.png" alt="product"></div>
+                    <div class="box-image">
+                        <div class="content-overlay"></div><img src="/images/item-12.png" alt="product">
+                        <button class="product-btn">VIEW PACKAGE</button>
+                    </div>
                     <div class="box-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore,
                         sapiente!</div>
                     <div class="box-price">R 270.00</div>
                 </div>
-
-
-
             </div>
         </div>
         </div>
